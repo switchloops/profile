@@ -1,0 +1,134 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Poppins:300,400,500,700");
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Ma+Shan+Zheng&family=Rampart+One&display=swap');
+
+body {
+  background-color: #ECFFC9;
+  color: #7871BF;
+  font-family: 'Hina Mincho', sans-serif;
+  font-size: 40;
+  line-height: 1.4;
+  text-align: center;
+}
+
+h1 {
+  color: purple;
+  font-family: 'Rampart One', sans-serif;
+  font-size: 40;
+  line-height: 2.0;
+}
+
+h2 {
+  color: orangered;
+  font-family: 'Rampart One', sans-serif;
+  font-size: 28;
+  line-height: 1.6;
+}
+
+h3 {
+  color: #7871BF;
+  font-family: 'Rampart One', sans-serif;
+  font-size: 20;
+  line-height: 1.4;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blueviolet;
+  text-decoration: underline overline wavy blueviolet;
+}
+
+ul {
+   list-style-type: none;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.btn {
+  background: #64FED6;
+  color: #7871BF;
+  padding: 10px;
+  border-radius: 4px 8px;
+  box-shadow: 4px 4px 8px #888888;
+}
+
+/* Add cool touches to your cards using CSS properties
+like background, border, border-radius and box-shadow.
+Keep it simple, with white background
+and subtle radius and shadows (as you saw in the lecture). */
+
+/* Any time you want to name an element of your page, ask yourself:
+Should I use a class or an id? Is it unique or re-usable?
+What name should I pick for my class? Respect the component-shape convention
+Should I split this design into several classes instead of one big class? */
+
+.container {
+  background: whitesmoke no-repeat fixed center;
+  border: 10px dotted #82A6EE;
+  border-radius: 50px 20px;
+  box-shadow: 4px 4px 8px #888888;
+  width: 1000px;   /* This sets the width */
+  margin: 100 auto; /* This automatically sets left/right margins */
+}
+
+.card {
+  margin: 32px;
+  padding: 32px;
+  background: whitesmoke no-repeat fixed center;
+  border: 4px dashed #82A6EE;
+  border-radius: 80px 20px;
+  box-shadow: 4px 4px 8px #888888;
+}
+
+/* Making an image circle and centering texts are very common design tasks.
+They deserve their own re-usable class, not to be mixed in other classes or ids!
+Don’t repeat yourself and try to use generic class names.
+Consider each CSS class as a re-usable design that you can apply everywhere on your website.
+Getting this mindset is the main difficulty for CSS beginners. */
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+/* Try to resize your window to understand how media queries work.
+
+⚠️⚠️⚠️ Be careful with the order of your media queries ⚠️⚠️⚠️
+As with if statements in ruby, order matters! If several conditions are true, the last CSS rule will be applied. */
